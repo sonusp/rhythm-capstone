@@ -2,6 +2,7 @@
   <img src="google-rhythm/public/favicon.svg" alt="Google Rhythm Logo" width="100"/>
   <h1>🌸 Google Rhythm 🌸</h1>
   <p><b>An AI-powered, privacy-first women's health Concierge Agent.</b></p>
+  <h3><a href="https://project-1rhgc.vercel.app/">🔴 Try the Live Interactive Demo Here</a></h3>
   
   [![Kaggle Capstone](https://img.shields.io/badge/Kaggle-Vibe_Coding_Capstone-blue?style=for-the-badge&logo=kaggle)](https://www.kaggle.com)
   [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
