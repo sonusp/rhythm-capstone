@@ -1,0 +1,37 @@
+{
+  "rewrites": [
+    {
+      "source": "/nim-api/:path*",
+      "destination": "https://integrate.api.nvidia.com/:path*"
+    },
+    {
+      "source": "/openrouter-api/:path*",
+      "destination": "https://openrouter.ai/api/:path*"
+    },
+    {
+      "source": "/grok-api/:path*",
+      "destination": "https://api.x.ai/:path*"
+    },
+    {
+      "source": "/groq-api/:path*",
+      "destination": "https://api.groq.com/:path*"
+    },
+    {
+      "source": "/openai-api/:path*",
+      "destination": "https://api.openai.com/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
+      ]
+    }
+  ]
+}

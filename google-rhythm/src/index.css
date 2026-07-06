@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    font-size: 18px;
+  }
+  body {
+    @apply font-sans text-gray-900 bg-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    overscroll-behavior-y: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+  /* Global Accessibility Focus Rings */
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 2px solid #007AFF;
+    outline-offset: 2px;
+  }
+  .dark button:focus-visible, .dark a:focus-visible, .dark input:focus-visible, .dark textarea:focus-visible, .dark select:focus-visible {
+    outline: 2px solid #0A84FF;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  @keyframes float-pulse {
+    0%, 100% { transform: translateY(0) scale(1); filter: brightness(1); }
+    50% { transform: translateY(-8px) scale(1.05); filter: brightness(1.2); }
+  }
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    15% { transform: scale(1.25); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.25); }
+    60%, 100% { transform: scale(1); }
+  }
+  @keyframes lock-click {
+    0%, 100% { transform: scale(1) rotate(0); }
+    25% { transform: scale(1.1) rotate(-10deg); }
+    50% { transform: scale(0.95) rotate(10deg); }
+    75% { transform: scale(1.05) rotate(-5deg); }
+  }
+  
+  .animate-lottie-brain { animation: float-pulse 3s ease-in-out infinite; }
+  .animate-lottie-apple { animation: heartbeat 2s ease-in-out infinite; }
+  .animate-lottie-shield { animation: lock-click 2.5s ease-in-out infinite; }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-6px); }
+    20%, 40%, 60%, 80% { transform: translateX(6px); }
+  }
+  .animate-shake { animation: shake 0.5s ease-in-out; }
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in { animation: fade-in 0.3s ease-out; }
+
+  @keyframes orb-vibrate {
+    0% { transform: scale(1.1) translate(0px, 0px); }
+    25% { transform: scale(1.12) translate(-2px, 1px); }
+    50% { transform: scale(1.08) translate(2px, -2px); }
+    75% { transform: scale(1.11) translate(-1px, 2px); }
+    100% { transform: scale(1.1) translate(1px, -1px); }
+  }
+  .animate-orb-vibrate { 
+    animation: orb-vibrate 0.2s infinite ease-in-out; 
+  }
+}

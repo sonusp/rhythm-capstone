@@ -1,0 +1,6 @@
+name = "rhythm-voice-proxy"
+main = "src/index.js"
+compatibility_date = "2024-05-01"
+
+[vars]
+# We will inject the API key securely via wrangler secret put
