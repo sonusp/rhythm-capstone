@@ -23,6 +23,8 @@
 | <img src="google-rhythm/public/screenshots/dashboard.png" alt="Dashboard" width="400"/> | <img src="google-rhythm/public/screenshots/log.png" alt="Daily Log" width="400"/> |
 | **Personalized Onboarding** | **AI Clinical Insights** |
 | <img src="google-rhythm/public/screenshots/onboarding.png" alt="Onboarding" width="400"/> | <img src="google-rhythm/public/screenshots/insights.png" alt="Insights" width="400"/> |
+| **Privacy & Settings** | **Custom Modes** |
+| <img src="google-rhythm/public/screenshots/settings.png" alt="Settings" width="400"/> | <img src="google-rhythm/public/screenshots/other.png" alt="Other Modes" width="400"/> |
 
 ---
 

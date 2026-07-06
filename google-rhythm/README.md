@@ -23,6 +23,8 @@
 | <img src="public/screenshots/dashboard.png" alt="Dashboard" width="400"/> | <img src="public/screenshots/log.png" alt="Daily Log" width="400"/> |
 | **Personalized Onboarding** | **AI Clinical Insights** |
 | <img src="public/screenshots/onboarding.png" alt="Onboarding" width="400"/> | <img src="public/screenshots/insights.png" alt="Insights" width="400"/> |
+| **Privacy & Settings** | **Custom Modes** |
+| <img src="public/screenshots/settings.png" alt="Settings" width="400"/> | <img src="public/screenshots/other.png" alt="Other Modes" width="400"/> |
 
 ---
 
