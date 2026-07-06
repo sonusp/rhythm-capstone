@@ -26,6 +26,8 @@
 | <img src="public/screenshots/onboarding.png" alt="Onboarding" width="400"/> | <img src="public/screenshots/insights.png" alt="Insights" width="400"/> |
 | **Privacy & Settings** | **Custom Modes** |
 | <img src="public/screenshots/settings.png" alt="Settings" width="400"/> | <img src="public/screenshots/other.png" alt="Other Modes" width="400"/> |
+| **Google Drive & Calendar Sync** | **Data Migration Assistant** |
+| <img src="public/screenshots/drive.png" alt="Google Integrations" width="400"/> | <img src="public/screenshots/migration.png" alt="Migration" width="400"/> |
 
 ---
 
